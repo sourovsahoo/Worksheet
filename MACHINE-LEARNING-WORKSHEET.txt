@@ -1,0 +1,92 @@
+Objective Answers:-
+-------------------------------------------------
+
+1--C
+2--D
+3--C
+4--B
+5--A
+6--B
+7--B
+8--A,B
+9--A,B,C,D
+10--A,B,D
+
+Subjective Answers:-
+--------------------------------------------------
+
+11.Outlier are data point that are significantly different or distant from all other data points in a given dataset.
+
+   Main causes of outliers are:-
+
+   a)Data entry error-When data is entered manually sometimes this error happens.e.g-If 100 is enterd as 1000
+   b)Measurement errors-When same data is entered in different units.
+
+IQR method example(two cases):-
+   a)When n=no.of observations =odd
+   b)When n=no.of observations =even
+
+a)Odd case(n=odd):-
+
+   lets say we have a list of n=9(odd) numbers [2,2,4,8,9,4,5,7,6]
+
+   step-1-Arrange the numbers in ascending order-[2,2,4,4,5,6,7,8,9]
+
+   step-2-Calculate median=Q2=2nd quartile=50%={[(n+1)/2]th element}/2=5/2=2.5
+
+                           Q1=1st quartile=25%=(2+4)/2=3
+                           Q3=3rd quartile=75%=(7+8)/2=7.5
+
+   step-3-Inter quartile range(IQR)=Q3-Q1=7.5-3=4.5
+
+   step-4-Outliers < Q1-1.5*IQR=3-(1.5*4.5)=-3.75
+          Outliers > Q3+1.5*IQR=7.5+(1.5*4.5)=14.25
+
+   step-5-Hence , -3.75 < Outliers <14.25
+
+b)Even case(n=even):-
+
+   lets say we have a list of n=10(even) numbers [2,2,4,8,9,4,5,7,6,3]
+
+   step-1-Arrange the numbers in ascending order-[2,2,3,4,4,5,6,7,8,9]
+
+   step-2-Calculate median=Q2=2nd quartile=50%={(n/2)th element+(n+2/2)th element}/2=(4+5)/2=4.5
+
+                           Q1=1st quartile=25%=(2+3)/2=2.5
+                           Q3=3rd quartile=75%(7+8)/2=7.5
+
+   step-3-Inter quartile range(IQR)=Q3-Q1=7.5-2.5=5
+
+   step-4-Outliers < Q1-1.5*IQR=2.5-(1.5*5)=-5
+          Outliers > Q3+1.5*IQR=7.5+(1.5*5)=15
+
+
+   step-5-Hence , -5< Outliers< 15
+
+
+
+12.The main difference between bagging and boosting algorithms is:-
+   In bagging algorithms(Random forest,Extratree) each model(tree) works parallely,i.e the algorithm does not focus on error made by previous model.
+   In boosting algorithm(Adaboost,Xgboost,GBM) models(tree) works sequentially,i.e the algorithm tries to reduce the error of previous model.
+      Exception-Adaboost,Parallelizing is done in node level,But model(trees) are sequential as in all boosting algorithms.
+
+13.Adjusted R-Squared evaluation metrics is a modified version of R-Squared metrics which has been adjusted for the number of independent variables(k).
+
+   In case of R-Square metrics,when more features are added to the data,the value of R-Squared metrics increases or doesnot change but it never decreases even if we       add faulty data.Here we are never penalized for adding such faulty data.Hence we use Adjusted R-Squared metrics.
+   
+   Adjusted R-Squared = 1-(1-R2)*[(n-1)/(n-(k+1)]
+            n=Number of observations
+            k=Number of features
+            
+            0 < Adjusted R-Squared < 1
+
+14.Standardisation(Standardscaler) converts the data points into standard normal distribution form where mean=0 and standard deviation=1.
+   Normalisation(Minmaxsclaler) converts the data points ranging inbetween 0 and 1.
+
+15.Cross validation data splitting technique where we divide our data set into 'k' different parts and take only one part at a time for testing the model and other k-1    parts to train the model.This process continues for k iterations and gives us k no.s different accuracy for different testing sets.Finally we take the mean of all    the accuracy as the model accuracy.
+
+   Advantage:-
+   This process prevents overfitting of model as testing set is changed for each iteration,thus increasing the consistency of the model.
+   
+   Disadvantage:-
+   Higher value of CV(k) leads to overfitting of the model and also increases the computation time.

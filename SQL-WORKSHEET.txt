@@ -1,0 +1,31 @@
+Objective Answers:-
+
+1--A,D
+2--A,B,C
+3--B
+4--B
+5--A
+6--C
+7--B
+8--B
+9--NONE OF THEM
+10-D
+
+Subjective Answers:-
+
+11.A data warehouse is a collection of databases which usually contains historical data derived from transactional data.The data can be from one or more sources and    are stored in a common place in the form of tables which are easy to extract.The data is mainly used for reporting and data analysis.It is considered as a core    component of business intelligence.
+
+12.OLTP-Online transaction processing-->Captures, stores, and processes data from transactions in real time.
+   OLAP-Online analytical processing.-->Uses complex queries to analyze & aggregated historical data from that is derived from OLTP systems.
+
+13.There are three prominent data warehouse characteristics:-
+
+   a)Integrated  : The way data is extracted and transformed is uniform, regardless of the original source.
+   b)Time-variant: Data is organized via time-periods (weekly, monthly, annually, etc.).
+   c)Non-volatile: A data warehouse is not updated in real-time.
+
+14.The star schema is the simplest style of data mart schema and is the approach most widely used to develop data warehouses and dimensional data marts. The star    schema consists of one or more fact tables referencing any number of dimension tables.
+
+15.SETL means transferring the data from different sources to a data warehouse.
+   The SETL system simplified the ETL(extract,transform & load)process to deal with heterogeneous data sources flexibly.
+   It is a light-weighted, scalable and high-performance ETL system.

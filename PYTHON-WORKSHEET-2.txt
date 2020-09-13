@@ -1,0 +1,46 @@
+Objective Answers:-
+
+1--B
+2--A
+3--A
+4--B
+5--C
+6--C
+7--A
+8--B
+9--A,B,D
+10--A,C,D
+
+Subjective Answers:-
+
+11--       List                                              Tuples                                Sets                               Dictionary
+    
+    collection which is ordered.                         ordered                        Unordered and Unindexed items          unordered, changeable and indexed
+    Lists are mutable (changeable) .                     immutable (unchangeable)       mutable (changeable)                   mutable (changeable)
+    Allows duplicate members                             Allows duplicate members       Does not take duplicate Values.        Allows duplicate members
+    Brackets used : []                                   Brackets used :()              Brackets used : { }                    Brackets used : {}
+    Lists are like arrays declared in other languages.   Faster than lists              Slower than lists                      Key:Value Pair in Python
+
+12.Yes,Strig are mutable in python
+   
+      s="I+Love+Python"
+      t=s.replace('+',' ')
+Out[]:I Love Python
+
+13.The ord() function returns the number representing the unicode code of a specified character.
+
+   Example:-
+
+    ord('a')
+Out:97
+
+Function for finding data type in python where 'df' is the dataframe/dataset:-
+
+   df.dtypes
+
+14.In jupyter notebook.
+
+15.In jupyter notebook
+
+
+    
