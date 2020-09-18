@@ -1,0 +1,151 @@
+1.
+SVM(Support vector machines)algorithm opted popularly for classification problems:-
+There are basically 3 types of kernels used in SVM :-
+
+a)Linear    -->This kernel is not widely used in real world dataset as data in real world world scenario's are rearely linearly distributed.
+b)Polynomial-->This kernel yeids good result,but the number of higher dimensions features increasingexponentially and therefore computationally more expensive.
+c)rbf(radial basis functuion/gaussian) -->Most commonly used in real world scenarios but prone to overfitting and captures noise.
+
+                                   x(x,y)=(exp(||x,y||^2)) / (2*((SD)^2)))
+
+
+2.
+A residual sum of squares (RSS) is a statistical technique used to measure the amount of variance in a data set that is not explained
+ by a regression model.
+The residual sum of squares measures the amount of error remaining between the regression function and the data set.
+Residual sum of squares–also known as the sum of squared residuals–essentially determines how well a regression model explains or represents the data in the model.
+Ideally, the sum of squared residuals should be a smaller or lower value in any regression model.
+The smaller the residual sum of squares, the better your model fits your data; The greater the residual sum of squares, the poorer your model fits your data. A value of zero means your model is a perfect fit.
+
+The most common interpretation of r-squared is how well the regression model fits the observed data. 
+For example, an r-squared of 60% reveals that 60% of the data fit the regression model. Generally, a higher r-squared indicates a better fit for the model.
+Ideally, the r-squared should be as high as possible in any regression model.
+
+3.
+Let,
+ Yi is the actual observed value of the dependent variable,
+ y-hat is the value of the dependent variable according to the regression line, as predicted by our regression model. 
+What we want to get is a feel for is the variability of actual y around the regression line, ie, the volatility of error(ϵ-noise). 
+This is given by the distance yi minus y-hat. 
+
+TSS=summation(Yi-Ymean)^2
+RSS=summation(Yi-y-hat)^2
+ESS=summation(y-hat-Ymean)^2
+
+Generally, R2, called the coefficient of determination, is used to evaluate how good the ‘fit’ of the regression model is.
+ R2 is calculated as ESS/TSS, ie the ratio of the explained variation to the total variation.
+
+                           R2 = ESS/TSS
+
+4.
+This Gini impurity index terminology comes from the chapter of decesion tree.
+This is one of the split method techniques of decesion tree algorithm for categorical target only.
+Gini impurity = 1-Gini
+where Gini=p1^2 + p2^2 + p3^2 + .....+ pn^2
+p1,p2,p3...pn-->probabilities for each class/category.
+
+Lower the gini impurity higher is the homogeneity or purity of the node.
+Hence,Class with lower gini impurity is given priority for splitting.
+ 
+5.
+Yes,Unregularized decision-trees prone to overfitting.
+In decision trees regularization can be done by pruning the tree.
+ If left to its own device the tree can continue to fit till each data point is a different leaf in the tree.
+ This obviously will not generalize well so you have to put in different criteria to stop splitting the nodes beyond a point.
+
+Decision trees are prone to overfitting, especially when a tree is particularly deep(depth=high).
+ This is due to the amount of specificity we look at leading to smaller sample of events that meet the previous assumptions. 
+This small sample could lead to unsound conclusions.
+
+There are many other parametrs to stop the tree at a given condition.
+
+6.
+Ensemble techniques-> from the name itself we can say that it combines(ensembles) the predictions of multiple models to reduce the variance of predictions and reduce generalization error to get a best fit model.
+This ensembling of weak learning model to produce a strong learning model is called as ensembling technique.
+The ensembling of models is done sequentially and parallely.  
+
+7.
+Depending on the type of ensembling techniques there are 2 types of algolithms:
+a)Bagging-->RandomForest,ExtraTree
+Models are built parallely.
+Models are not dependent on each other.
+Does'nt correct the error of previous models.
+
+b)Boosting-->Adaboost,Xgboost,GBM(Gradient boosting Machine algorithm)
+Models are built sequentially.
+Models are dependent on each other.models are built over the rrors of its previous models.
+Corrects the error of previous models.
+Prevents overfitting of models.
+
+Exception:-In Xgboost parallelizing is done in node level but trees are sequential as in boosting algorithms.
+
+
+
+8.Out of bag error in Random Forests(OOB error) is a measure of error in random forest algoritm.
+This error shows how the predicted value are different from actual values.
+
+9.
+Kfold-cross validation is a splitting technique to to check the model performance on a part of the dataset(step by step).
+steps:-
+A)Split dataset into k consecutive folds (without shuffling by default).
+B)Each fold is then used once as a validation set while the remaining  k - 1 folds form the training set.
+C)Take the mean of k acuuracy results to gat  the final accuracy of the model.
+
+This technique prevents overfitting of model as the model is tested on different validation sets.
+
+10.
+Hyperparameter optimization or tuning is the technique of choosing a set of optimal hyperparameters for a learning algorithm. 
+A hyperparameter is a parameter whose value is used to control the learning process.
+There are two types of techniques we basically use here:-
+A)GridsearchCV
+B)RandomizedSearchCV
+
+RandomizedSearchCV is faster than GridsearchCV.
+
+11.
+When the learning rate is too large, gradient descent can inadvertently increase rather than decrease the training error.
+Some times we use higher learning rate to overcome local minima's.
+When the learning rate is too small, training is not only slower, but may become permanently stuck with a high training error.
+
+
+12.
+This is the optimized condition for a model(best fit) where both bias & variance are low.
+Bias-Variance trade-off is the mid area of the graph(x-axis-->model complexity,y-axis-->prediction error)
+
+Bias    -->for understanding it can be taken as the prediction error in training set.
+Variance-->for understanding it can taken as the prediction error in testing set.
+
+                             Generaization error=Bias error + Variance error
+
+condition1-->low bias, high variance-->overfitting model.
+Condition2-->High bias, high variance-->underfitting model.
+
+Condition3-->low bias, low variance  -->Best fit model.
+
+13.
+Regularisation is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting.
+When more features are participating ,it leads to more  cofficients whose values are large which results in overfitting of the model.
+To avoid such condition we apply regularzation techniques. 
+The commonly used regularisation techniques are : L1 & L2 regularisation.
+a)Lasso Regularization(L1)-->Lasso gives us less number of parameters(no.of variables gets reduced when cofficients of variables reach zero,such features are eliminated)
+b)Ridge regularization(L2)-->Ridge reduces the value of cofficients but not equal to zero which are difficult to interpret.
+
+14.
+Adaboost is more about 'voting weights' 
+and Gradient boosting as from its name we can say is more about 'adding gradient optimization' to find best fit model.
+
+In Gradient boosting model are built sequentiallt where each model tries to reduce the error of previous model.
+Model are built over the residuals of previous model.
+This is done to determine if there is any pattern missed by the previous model.
+
+ Adaboost doesn't overfit because it is more about 'organizing models to vote' than 'voting'.
+ In fact, if we have a gradient boosting model, we can use it in adaboost along with other models when sppecified in n_estimators kernel.
+
+15.
+No,We cannot use  Logistic Regression for classification of Non-Linear Data.
+Logistic regression forms a straight line which passes through maximum data points.
+But in non linear dataset the points will be scattered and have high variance.hence high error in the model.
+Logistic regression model will not train properly on such non linear dataset.
+
+
+
