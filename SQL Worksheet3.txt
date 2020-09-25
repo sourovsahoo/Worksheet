@@ -1,0 +1,82 @@
+1.
+
+Create table Customers123(
+customerNumber int NOT NULL,
+customerName varchar (50),
+contactLastName varchar (50),
+contactFirstName varchar (50),
+phone int,
+addressLine1 varchar (50),
+addressLine2 varchar (50),
+city varchar (50),
+state varchar (50),
+postalCode varchar (50),
+country varchar (50),
+salesRepEmployeeNumber varchar (50),
+creditLimit int);
+
+2.
+
+Create table orders(
+orderNumber int NOT NULL,
+orderDate DATE,
+requiredDate DATE,
+shippedDate DATE,
+status varchar (100),
+comments varchar (100),
+customerNumber int);
+
+3.
+
+desc orders;
+
+select * from orders;
+
+
+4.
+
+select comments from orders;
+
+
+5.
+
+select * from orders where orderDate like 'YYYY-MM-DD';
+
+6.
+
+select employeeNumber,lastName,firstName from orders;
+
+
+7.
+
+SELECT orders.orderNumber, Customers.customerName FROM orders
+INNER JOIN Customers ON orders.customerNumber=Customers.customerNumber;
+
+8.
+
+
+SELECT employees.employeeNumber, Customers.customerName FROM employees
+INNER JOIN Customers ON employees.customerName=Customers.customerName;
+
+9.
+
+select * from payments where paymentDate like 'YYYY-MM-DD';
+
+10.
+
+select productName,MSRP,productDescription from products;
+
+11.
+
+SELECT TOP(1) productCode, SUM(quantityOrdered) AS TotalQuantity FROM orderdetails GROUP BY productCode ORDER BY SUM(quantityOrdered) DESC
+SELECT orderDetails.TotalQuantity, products.productName FROM orderDetails
+INNER JOIN orderDetails ON orderDetails.TotalQuanty=products.productName;
+
+12.--------------
+13------------
+14-----------
+15------------
+
+
+
+
