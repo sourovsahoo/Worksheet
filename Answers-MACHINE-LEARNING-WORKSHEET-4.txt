@@ -1,0 +1,60 @@
+1.A,B
+2.A
+3.B
+4.D
+5.A
+6.C
+7.A
+8.B
+
+9.Let there are four positive Class A and six negative Class B.
+Thus, P (+) = 4/10 and P (−) = 6/10.
+
+The Entropy  =  −4/10 log2(4/10) − 6/10 log2(6/10) 
+
+Gini Index   =  (4/10)^2 + (6/10)^2 =0.52 
+
+10.
+a)Random forest is a ensemble technique while decesion tree is not.
+And we know ensemble works better.
+b)Random forest uses the weak learner technique where many trees are trained to give a strong output.
+Whereas decesion trees are just one tree model.
+c)Decesion tree is prone to overfitting.
+
+11.
+Scaling is done to get all the numerical values to a common unit.two techniques:-
+a)StandardScaler-converts the data to gaussian distribution where mean=0 and standard deviation=1
+ 
+b)MinMaxScaler-converts the data inbetween 0 and 1,
+
+12.--------------
+
+13.
+No,accuracy is a good metric to measure the performance of the model when the data is inbalanced highly.
+The model gets biased toward the class with higher frequency and the prediction hence gives higher accuracy,but its all biased results and we should'nt accept it.Again,
+Acuuracy does not distinguish between the numbers of correctly classified points of different classes.
+
+14.
+The F-score, also called the F1-score, is a measure of a model's performance on a dataset. 
+The F-score is a way of combining the precision and recall of the model, and it is defined as the harmonic mean of the model's precision and recall.
+
+F1=  2 / [ (1/prcesion) + (1/recall) ]
+
+15.To center the data (make it have zero mean and unit standard error), We subtract the mean and then divide the result by the standard deviation in standard scaler.
+
+                                                                                  x′=x−μσ
+We convert the data in between 0 to 1 in minmaxscaler.
+
+                                                   
+We do this on the training set of data. But then we have to apply the same transformation to our testing set.
+But we have to use the exact same two parameters μ and σ (values) that we used for centering the training set.
+
+Hence,sklearn.StandardScaler.fit() just calculates the parameters (e.g. μ and σ in case of StandardScaler) and saves them as an internal object's state.
+
+Afterwards,sklearn.StandardScaler.transform() method is called to apply the transformation to any particular dataframe.
+
+fit_transform() joins above two steps and is used for the initial fitting of parameters on the training set x,
+while also returning the transformed x′. 
+Internally, the transformer object just calls first fit() and then transform() on the same data.
+
+
