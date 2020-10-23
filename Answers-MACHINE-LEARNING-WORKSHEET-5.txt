@@ -1,0 +1,56 @@
+1.B
+2.A
+3.C
+4.C
+5.D
+6.B
+7.C
+8.A,D
+9.B,D
+10.C
+By definition,of overfitting:-
+high model variance despite low model bias is referred to as overfitting.
+
+11.When a independent categorical feature has large number of categories inside it,In such cases one-hot ecoding(dummies) will result in large number of new dummy column formations,
+Which can finally leads to high coputational costs.
+
+In such  independent categorical feature case we can use "LabelEncoder" technique.
+
+12. In case of data imbalance problem in classification,the techniques used to balance the dataset is basically 3 types:-
+
+A)RandomOverSampler--> This technique balances the dataset by creating dummy data for the minority class.
+Applying this technique results in equal frequency of both the classes.
+This technique is faster then SMOTETomek technique.
+ 
+B)RandomUnderSampler--> This technique balances the dataset by deleting the majority class of data to same frequency a of the minority class .
+Applying this technique results in equal frequency of both the classes.
+Generally this technique is not used in projects as data is lost here,which might be very important.
+
+C)SMOTETomek --------->Supports multi-class resampling. A one-vs.-rest scheme is used.
+This technique balances the dataset by creating dummy data for the minority class.
+Applying this technique results in equal frequency of both the classes.
+
+D)ADASYN-------------->This is a type of OverSampling technique.
+This technique balances the dataset by creating dummy data for the minority class.
+Applying this technique results in equal frequency of both the classes.
+
+13.
+
+14.The main purpose of gridsearchCV is to give the right combination "VALUE" of the parameters in the given algorithm.
+ These values give the best model performance when new data(test data) is given to the model.
+
+GridsearchCV is avery important step in model building process as it helps get generalise output when a new datset is tested on the model.
+
+With increase in the size of the dataset the computational cost of GridsearchCV increases.
+
+So,its not Preferable to use in case of large datasets.
+If we can spend on computational space(Colab)we can go for it.
+
+15.
+a) MAE-->Mean absolute error
+b) MSE-->Mean Squared error
+c) RMSE-->Root Mean Squred Error
+d) RMSLE-->Root mean squared log error
+e) R-Squared error
+f) Adjusted R-Squared error
+
