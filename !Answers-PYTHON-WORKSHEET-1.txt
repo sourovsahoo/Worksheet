@@ -1,0 +1,12 @@
+1.C
+2.B
+3.C
+4.A
+5.-------------------
+6.The finally keyword is used to execute code (used with exceptions - try.. catch statements) no matter if there is an exception or not.
+7.The raise keyword is used to raise an exception.We can define what kind of error to raise, and the text to print to the user.
+8.We should use yield when we want to iterate over a sequence, but don't want to store the entire sequence in memory. Yield are used in Python generators. A generator function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return.
+9.A,C
+10.A,B
+
+11 to 15 in jupyter notebook.

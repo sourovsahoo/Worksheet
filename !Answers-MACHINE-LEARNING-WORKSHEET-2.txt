@@ -1,0 +1,92 @@
+1.C
+2.B
+3.C
+4.D
+5.D
+6.A,D
+7.B,C
+8.A,C
+9.A,B
+
+10.
+Mathematically,
+Adjusted Rsquared=1-(1-Rsquared)*[[n-1] /[n-(k+1)]] 
+
+Where,
+n-->number of samples.
+k-->total number of features including unnecessary predictor features.
+
+If the value of k increases i.e we add more features the whole of [[n-1] /[n-(k+1)]] increases as the denominator [n-(k+1)] decreases.
+Higher the value of 'k' lower is the denominator,Hence a lower value when divided the result is a always a high value & vice verasa..
+
+0 < Adjusted Rsquared < 1
+Adjusted Rsquared directly proportional to model performance.
+i.e higher the Adjusted Rsquared better is the model performance.
+
+11.
+Ridge regularization reduces the value of cofficients to near about zero but not exactly zero.Which makes it difficult to interpret.Whereas,
+Lasso regularization helps us reduce value of cofficients to Zero.
+Such features with zero cofficient values can be eliminated.
+Hence finding the most important features contributing to model performance.
+
+12.VIF-->Variance inflation factor. 
+ VIF determines the strength of the correlation between the independent variables.
+ It is predicted by taking a variable and regressing it against every other variable. 
+
+or
+
+VIF score of an independent variable represents how well the variable is explained by other independent variables. 
+
+VIF starts at 1 and has no upper limit
+VIF = 1, no correlation between the independent variable and the other variables
+VIF exceeding 5 or 10 indicates high multicollinearity between this independent variable and the others.
+
+Small VIF values indicates low correlation among variables under ideal conditions VIF < 3 features are considered for modelling. 
+However it is acceptable if it is less than 10.
+
+13.Scaling the data is a must do feature for distance based algorithms such as KNN etc.
+Most of the time the features in the datasets are in different units,
+e.g-In a dataset one feature's unit is kilometer and other feature is miles in same dataset. 
+In such case we have to scale the data before feeding it into training the model..
+
+14.
+a-->Sum of Squares Due to Error(SSE)
+   --------------------------------
+This statistic measures the total deviation of the response values from the fit to the response values. It is also called the summed square of residuals and is usually labelled as SSE.
+
+SSE = Sum(i=1 to n){wi (yi - fi)^2}
+
+Here yi is the observed data value and fi is the predicted value from the fit. wi is the weighting applied to each data point, usually wi = 1.
+
+A value closer to 0 indicates that the model has a smaller random error component, and that the fit will be more useful for prediction.
+
+b-->R-Square
+    ---------
+This statistic measures how successful the fit is in explaining the variation of the data. Put another way, R-square is the square of the correlation between the response values and the predicted response values. It is also called the square of the multiple correlation coefficient and the coefficient of multiple determination.
+
+R-square is defined as
+
+R-square = 1 - [Sum(i=1 to n){wi (yi - fi)2}] /[Sum(i=1 to n){wi (yi - yav)^2}] = 1 - SSE/SST
+Here fi is the predicted value from the fit, yav is the mean of the observed data yi is the observed data value.
+wi is the weighting applied to each data point, usually wi=1. SSE is the sum of squares due to error and SST is the total sum of squares.
+
+c-->Degrees of Freedom Adjusted R-Square
+This statistic uses the R-square statistic defined above, and adjusts it based on the residual degrees of freedom. The residual degrees of freedom is defined as the number of response values n minus the number of fitted coefficients m estimated from the response values.
+
+v = n-m
+v indicates the number of independent pieces of information involving the n data points that are required to calculate the sum of squares. Note that if parameters are bounded and one or more of the estimates are at their bounds, then those estimates are regarded as fixed. The degrees of freedom is increased by the number of such parameters.
+
+The adjusted R-square statistic is generally the best indicator of the fit quality when you compare two models that are nested – that is, a series of models each of which adds additional coefficients to the previous model.
+
+adjusted R-square = 1 - SSE(n-1)/SST(v)
+The adjusted R-square statistic can take on any value less than or equal to 1, with a value closer to 1 indicating a better fit. Negative values can occur when the model contains terms that do not help to predict the response.
+
+d-->Root Mean Squared Error
+    -------------------------
+This statistic is also known as the fit standard error and the standard error of the regression. It is an estimate of the standard deviation of the random component in the data, and is defined as
+
+RMSE = s = (MSE)½
+where MSE is the mean square error or the residual mean square
+
+MSE=SSE/v
+Just as with SSE, an MSE value closer to 0 indicates a fit that is more useful for prediction.
