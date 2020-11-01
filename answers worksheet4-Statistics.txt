@@ -1,0 +1,52 @@
+1.A
+2.A
+3.B
+4.---------
+5.C
+6.A
+7.B
+8.A
+9.D
+10.
+Normal distribution is often called the bell curve because the graph of its probability density looks like a bell.
+ It is also known as called Gaussian distribution.
+This normal type of data distribution is rare in real world scenarios.
+Modifying the Data into Normal / Gaussian format gives best results for model building in Machine Learning.
+
+11.
+   
+Missing data is handeled by 2 types of imputation technicques.
+
+a)Manual-->imputing data into data set after getting the insight of the data.
+
+b)automatic-->Imputer method library in python.G
+enerally KNN alogorithm is used for this Automatic imputation technique.
+
+My Reccomendation is option (a)
+Because analyzing the data before imputation is a must process in model building.
+
+12.
+A/B Testing is a tried-and-true method commonly performed using a traditional statistical inference approach grounded in a hypothesis test.
+ EXAMPLE:-- t-test, z-score, chi-squared test). 
+Here 2 tests are run in parallel: 
+Treatment Group (Group A) - This group is exposed to the new web page, popup form, etc
+
+
+13. Mean imputation of missing data is acceptable or not will be decided Only after analyzing the data.
+When in real world dataset scenarios,Even if we replace the missing values with the mean we have to produce valid reasons of replacing like so.
+
+14.
+                      STATISTICS
+                           |
+                           |
+           ------------------------------------------------------------
+           |                                                           |    |
+      Descriptive                                               Inferential
+            |                                                  a)Z-Score method
+----------------------------                                   b)Hypothesis testing
+     |                      |                                  c)T tests
+Central Tendency       Distribution/Disperssion                d)Paired T test
+        a)Mean         a)Percentile                            e)ANNOVA Test
+        b)Median       b)Range (Max-Min)                       f)AMCOVA Test..... ETC...
+        c)Mode         c)Standard Deviation                    
+                       d)Variance
