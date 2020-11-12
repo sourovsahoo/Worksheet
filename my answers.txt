@@ -1,0 +1,18 @@
+1.C
+2.C
+3.B
+4.D
+5.D
+6.D
+7.D
+8.C
+9.C
+10.D
+11.D
+12.D
+13.C
+14.B
+
+15.In beautifulSoup:-
+A)For Single product(.find()) is used.
+B)For finding Multiple product(.findALL()) has to be used.only .find() cannot find multiple products.
