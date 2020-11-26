@@ -1,0 +1,59 @@
+1.-----------
+2.C
+3.A
+4.A
+5.B
+6.B
+7.B
+8.D
+9.A
+
+10.
+Bayes theorem provides a way to calculate the probability of a hypothesis based on its prior probability,
+ the probabilities of observing various data given the hypothesis, and the observed data itself.
+
+Bayes' Theorem is the fundamental result of probability theory – 
+it puts the posterior probability P(H|D) of a hypothesis as a product of the probability of the data given the hypothesis(P(D|H)), multiplied by the probability of the hypothesis (P(H)), divided by the probability of seeing the data.
+
+P(A|B)= [P(B|A) .P(A) ]/ P(B)
+
+11.
+
+A z-score describes the position of a raw score in terms of its distance from the mean, when measured in standard deviation units. The z-score is positive if the value lies above the mean, and negative if it lies below the mean.
+Simply put, a z-score (also called a standard score) gives you an idea of how far from the mean a data point is. But more technically it’s a measure of how many standard deviations below or above the population mean a raw score is. 
+
+z = (x – μ) / σ
+
+x-->point
+μ-->mean
+σ-->Standard deviation
+
+12.
+
+A t-test is a statistical test that is used to compare the means of two groups. 
+It is often used in hypothesis testing to determine whether a process or treatment actually has an effect on the population of interest, or whether two groups are different from one another.
+
+EXAMPLE:-
+
+If we want to know whether the mean petal length of iris flowers differs according to their species. 
+We find two different species of irises growing in a garden and measure 25 petals of each species. 
+We can test the difference between these two groups using a t-test.
+    (H0)-->The null hypothesis is that the true difference between these group means is zero.
+    (Ha)-->The alternate hypothesis is that the true difference is different from zero.
+
+13.
+
+A percentile is a term used in statistics to express how a score compares to other scores in the same set. 
+It's the percentage of values that fall below a particular value in a set of data scores.
+
+14.
+
+The one-way analysis of variance (ANOVA) is a analysis technique used to determine whether there are any statistically significant differences between the means of two or more independent (unrelated) groups (although we tend to only see it used when there are a minimum of three, rather than two groups).
+
+15.
+
+An ANOVA test is a way to find out if test survey or experiment results are significant.
+They help us to figure out if we need to reject the null hypothesis or accept the alternate hypothesis.
+
+
+
