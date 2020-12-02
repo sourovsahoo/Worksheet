@@ -1,0 +1,77 @@
+1.B
+2.D
+3.C
+4.A
+5.A
+6.C
+7.B
+8.A
+9.A,B,D
+10.A,C,D
+
+11.
+
+Deep learning is a subset of machine learning where artificial neural networks, 
+algorithms developed by humans, can learn from large amounts of data... 
+Deep learning allows machines to solve more complex problems even when the data set used is very diverse, unstructured and inter-connected.
+
+12.
+
+Reinforcement learning (RL) is an area of machine learning:-
+It is concerned with how software agents ought to take actions in an environment in order to maximize the notion of cumulative reward. 
+Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning. 
+Reinforcement learning differs from supervised learning in not needing labelled input/output pairs be presented, 
+and in not needing sub-optimal actions to be explicitly corrected. 
+Instead the focus is on finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).
+The main difference between the classical dynamic programming methods and reinforcement learning algorithms is that:-
+The classical dynamic programming do not assume knowledge of an exact mathematical model of the MDP( Markov decision process) and they target large MDPs where exact methods become infeasible.
+
+13.
+
+Machine learning uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned. 
+Deep learning structures algorithms in layers to create an "artificial neural network” that can learn and make intelligent decisions on its own.
+
+A).
+Machine Learning is a superset of Deep Learning
+Deep Learning is a subset of Machine Learning
+B).
+The data represented in Machine Learning is quite different as compared to Deep Learning as it uses structured data
+The data representation is used in Deep Learning is quite different as it uses neural networks(ANN).
+C).
+Machine Learning is an evolution of AI
+Deep Learning is an evolution to Machine Learning. Basically it is how deep is the machine learning.
+D).
+Machine learning consists of thousands of data points.
+Big Data: Millions of data points.
+E).
+Outputs: Numerical Value, like classification of score
+Anything from numerical values to free-form elements, such as free text and sound also.
+F).
+Uses various types of automated algorithms that turn to model functions and predict future action from data.
+Uses neural network that passes data through processing layers to the interpret data features and relations.
+G.
+Algorithms are detected by data analysts to examine specific variables in data sets.
+Algorithms are largely self-depicted on data analysis once they’re put into production.
+H.
+Machine Learning is highly used to stay in the competition and learn new things. 
+Deep Learning solves complex machine learning issues.
+
+14.
+
+Perceptron is an algorithm for supervised learning of binary classifiers. ... 
+It is a type of linear classifier, 
+i.e. a classification algorithm that makes its predictions based on a linear predictor function combining a set of weights with the feature vector.
+
+15.
+
+Machine Learning and AI are used interchangeably. Usually both terms are used to mean supervised learning.
+In theory: Machine Learning is a subfield of AI: One way of implementing AI.
+
+Artificial Intelligence is the broader concept of machines being able to carry out tasks in a way that we would consider “smart”.
+And, Machine Learning is a current application of AI based around the idea that we are really just be able to give machines access to data,
+and let them learn for themselves.
+
+On a broad level, we can differentiate both AI and ML as: AI is a bigger concept to create intelligent machines that can simulate human thinking capability and behavior, 
+whereas, machine learning is an application or subset of AI that allows machines to learn from data without being programmed explicitly.
+
+
