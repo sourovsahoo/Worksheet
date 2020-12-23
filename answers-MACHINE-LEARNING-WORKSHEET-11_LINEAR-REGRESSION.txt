@@ -1,0 +1,117 @@
+1.C
+2.B
+3.A
+4.D
+5.A
+6.A
+7.B
+8.C
+9.A,D
+10.B,C
+11.A,B
+
+12.
+
+Adjusted R^2 and R^2 both represent that how well the model fits the data points. 
+But adjusted R2 penalizes the model for using more features. 
+In case we increase the number of features in training data the R2 will increase but adjusted R2 will only increase if the new feature adds value to our model. 
+Due to this reason adjusted R2 is considered as a better evaluation metric than R2. Adjusted R2 is always less than or equal to R2. 
+The formula to calculate adjusted R2 is as follows:
+
+R^2adj=[(1-R^2)(n-1) / (n-k-1) ]
+ 
+Where, n = number of data points in the dataset
+K = Number of features in the dataset excluding the constant term
+
+Adjusted R-Squared evaluation metrics is a modified version of R-Squared metrics which has been adjusted for the number of independent variables(k).
+In case of R-Square metrics,when more features are added to the data,
+the value of R-Squared metrics increases or doesnot change but it never decreases even if we add faulty data.Here we are never penalized for adding such faulty data.
+Hence we use Adjusted R-Squared metrics.
+            
+            0 < Adjusted R-Squared < 1
+
+13.
+
+Cost function optimizes the regression coefficients or weights. 
+It measures how a linear regression model is performing. 
+We can use the cost function to find the accuracy of the mapping function, which maps the input variable to the output variable. 
+This mapping function is also known as Hypothesis function.
+
+Refer for diagrams and more explationg:--
+https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/
+
+
+14.
+
+SST = Summation i=1 to n(Yi-Y^)^2
+The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. 
+We can think of this as the dispersion of the observed variables around the mean – much like the variance in descriptive statistics.
+ 
+SSR= Summation i=1 to n(Yi^-Ybar)^2
+The second term is the sum of squares due to regression, or SSR. 
+It is the sum of the differences between the predicted value and the mean of the dependent variable. 
+Think of it as a measure that describes how well our line fits the data.
+
+SSE = Summation i=1 to n(ei)^2
+The last term is the sum of squares error, or SSE. 
+The error is the difference between the observed value and the predicted value.
+
+We usually want to minimize the error. The smaller the error, the better the estimation power of the regression. Finally, I should add that it is also known as RSS or residual sum of squares. Residual as in: remaining or unexplained.
+
+The Confusion between the Different Abbreviations
+It becomes really confusing because some people denote it as SSR. 
+This makes it unclear whether we are talking about the sum of squares due to regression or sum of squared residuals.
+
+In any case, neither of these are universally adopted, so the confusion remains and we’ll have to live with it.
+
+Simply remember that the two notations are SST, SSR, SSE, or TSS, ESS, RSS.
+
+Mathematically, SST = SSR + SSE.
+
+The rationale is the following: the total variability of the data set is equal to the variability explained by the regression line plus the unexplained variability, known as error.
+Given a constant total variability, a lower error will cause a better regression. 
+Conversely, a higher error will cause a less powerful regression. And that’s what you must remember, no matter the notation.
+
+
+15.
+
+a-->Sum of Squares Due to Error(SSE)
+   --------------------------------
+This statistic measures the total deviation of the response values from the fit to the response values. It is also called the summed square of residuals and is usually labelled as SSE.
+
+SSE = Sum(i=1 to n){wi (yi - fi)^2}
+
+Here yi is the observed data value and fi is the predicted value from the fit. wi is the weighting applied to each data point, usually wi = 1.
+
+A value closer to 0 indicates that the model has a smaller random error component, and that the fit will be more useful for prediction.
+
+b-->R-Square
+    ---------
+This statistic measures how successful the fit is in explaining the variation of the data. Put another way, R-square is the square of the correlation between the response values and the predicted response values. It is also called the square of the multiple correlation coefficient and the coefficient of multiple determination.
+
+R-square is defined as
+
+R-square = 1 - [Sum(i=1 to n){wi (yi - fi)2}] /[Sum(i=1 to n){wi (yi - yav)^2}] = 1 - SSE/SST
+Here fi is the predicted value from the fit, yav is the mean of the observed data yi is the observed data value.
+wi is the weighting applied to each data point, usually wi=1. SSE is the sum of squares due to error and SST is the total sum of squares.
+
+c-->Degrees of Freedom Adjusted R-Square
+This statistic uses the R-square statistic defined above, and adjusts it based on the residual degrees of freedom. The residual degrees of freedom is defined as the number of response values n minus the number of fitted coefficients m estimated from the response values.
+
+v = n-m
+v indicates the number of independent pieces of information involving the n data points that are required to calculate the sum of squares. Note that if parameters are bounded and one or more of the estimates are at their bounds, then those estimates are regarded as fixed. The degrees of freedom is increased by the number of such parameters.
+
+The adjusted R-square statistic is generally the best indicator of the fit quality when you compare two models that are nested – that is, a series of models each of which adds additional coefficients to the previous model.
+
+adjusted R-square = 1 - SSE(n-1)/SST(v)
+The adjusted R-square statistic can take on any value less than or equal to 1, with a value closer to 1 indicating a better fit. Negative values can occur when the model contains terms that do not help to predict the response.
+
+d-->Root Mean Squared Error
+    -------------------------
+This statistic is also known as the fit standard error and the standard error of the regression. It is an estimate of the standard deviation of the random component in the data, and is defined as
+
+RMSE = s = (MSE)½
+where MSE is the mean square error or the residual mean square
+
+MSE=SSE/v
+Just as with SSE, an MSE value closer to 0 indicates a fit that is more useful for prediction.
